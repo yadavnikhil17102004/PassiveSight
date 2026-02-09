@@ -1,6 +1,6 @@
-# Installation Guide - TRACEGUARD AI Community Edition
+# Installation Guide - TRACEGUARD AI™ Community Edition
 
-Complete step-by-step installation and setup guide for TRACEGUARD AI.
+Complete step-by-step installation and setup guide for TRACEGUARD AI™.
 
 ---
 

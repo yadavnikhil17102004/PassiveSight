@@ -1,9 +1,8 @@
-# TRACEGUARD AI - Community Edition
+# TRACEGUARD AI™ - Community Edition
 
 <div align="center">
 
 ![TRACEGUARD Logo]([REDACTED_URL])
-[![License: MIT]([REDACTED_URL])](LICENSE)
 [![Burp Suite]([REDACTED_URL])]([REDACTED_URL])
 [![Python]([REDACTED_URL])]([REDACTED_URL])
 
@@ -19,20 +18,22 @@
 
 ---
 
+> **Note:** This is the Community Edition. Commercial and Professional Editions with advanced features are available separately.
+
 ## 🌟 Overview
 
-**TRACEGUARD AI - Community Edition** is a free, open-source Burp Suite extension that brings the power of artificial intelligence to web application security testing. Using advanced AI models, TRACEGUARD performs intelligent passive analysis of HTTP traffic to identify OWASP Top 10 vulnerabilities, security misconfigurations, and potential attack vectors.
+**TRACEGUARD AI™ - Community Edition** is a Burp Suite extension that brings the power of artificial intelligence to web application security testing. Using advanced AI models, TRACEGUARD performs intelligent passive analysis of HTTP traffic to identify OWASP Top 10 vulnerabilities, security misconfigurations, and potential attack vectors.
 
 ### Why TRACEGUARD?
 
-Traditional security scanners rely on predefined signatures and patterns. **TRACEGUARD AI** goes beyond with:
+Traditional security scanners rely on predefined signatures and patterns. **TRACEGUARD AI™** goes beyond with:
 
 - **🧠 AI-Powered Analysis**: Leverages state-of-the-art language models (Ollama, OpenAI, Claude, Gemini) for intelligent vulnerability detection
 - **🎯 Context-Aware Detection**: Understands application logic and business context, not just pattern matching
 - **⚡ Real-Time Scanning**: Analyzes traffic as it flows through Burp's proxy
 - **📊 Professional Reporting**: Generates detailed findings with CWE, OWASP mappings, and remediation guidance
 - **🔄 Zero False Positives**: AI validation reduces noise and focuses on real vulnerabilities
-- **🆓 100% Free**: Community edition provides full passive analysis capabilities
+- **🆓 Community Edition**: Free passive analysis capabilities
 
 ---
 
@@ -67,7 +68,7 @@ Traditional security scanners rely on predefined signatures and patterns. **TRAC
 
 ### Vulnerability Detection
 
-TRACEGUARD AI detects a wide range of security issues including:
+TRACEGUARD AI™ detects a wide range of security issues including:
 
 | Category | Vulnerabilities |
 |----------|----------------|
@@ -89,41 +90,52 @@ TRACEGUARD AI detects a wide range of security issues including:
 
 - **Burp Suite** (Community or Professional)
 - **Java 8+** (required by Burp)
-- **Python 2.7** (Jython, included with Burp)
+- **Jython** (for Python extensions, typically bundled with Burp)
 - **AI Provider** (one of the following):
-  - [Ollama]([REDACTED_URL]) (Free, local)
-  - OpenAI API key
-  - Claude API key
-  - Gemini API key
+   - [Ollama]([REDACTED_URL]) (Free, local)
+   - OpenAI API key
+   - Claude API key
+   - Gemini API key
 
 ### Installation
 
+#### Method 1: From BApp Store (Recommended)
+
+1. Open Burp Suite
+2. Go to **Extender** → **BApp Store**
+3. Search for "TRACEGUARD AI"
+4. Click **Install**
+
+#### Method 2: Manual Installation
+
 1. **Download the Extension**
-   ```bash
-   git clone [REDACTED_URL]
-   cd traceguard-ai
-   ```
+   - Download `traceguard_ai_community.py` from this repository or the Burp Suite BApp Store
 
 2. **Load in Burp Suite**
    - Open Burp Suite
-   - Go to `Extensions` → `Installed`
-   - Click `Add`
-   - Set Extension type: `Python`
-   - Select `traceguard_ai_community.py`
-   - Click `Next`
+   - Go to **Extender** → **Extensions** → **Add**
+   - Set Extension type: **Python** (or Jython)
+   - Select the downloaded `traceguard_ai_community.py` file
+   - Click **Next**
 
 3. **Configure AI Provider**
-   - Go to `TRACEGUARD` tab in Burp
-   - Click `⚙ Settings`
+   - Go to **TRACEGUARD** tab in Burp
+   - Click **⚙ Settings**
    - Configure your AI provider (see [Configuration](#-configuration))
-   - Click `Test Connection`
-   - Click `Save`
+   - Click **Test Connection**
+   - Click **Save**
 
 4. **Start Scanning**
-   - Set your target scope in Burp (`Target` → `Scope`)
+   - Set your target scope in Burp (**Target** → **Scope**)
    - Browse the target application through Burp's proxy
    - TRACEGUARD will automatically analyze traffic
-   - View findings in the `Findings` panel and Burp's `Issue Activity`
+   - View findings in the **Findings** panel and Burp's **Issue Activity**
+
+### Requirements
+
+- **Cross-platform**: Windows, macOS, Linux
+- **Burp Suite** (Community or Professional)
+- **Jython** (for Python extensions)
 
 ---
 
@@ -235,10 +247,10 @@ TRACEGUARD AI detects a wide range of security issues including:
 #### 🔍 **Findings Panel**
 - All detected vulnerabilities
 - Severity-based color coding:
-  - 🔴 **High** - Critical vulnerabilities
-  - 🟠 **Medium** - Important security issues
-  - 🟡 **Low** - Minor vulnerabilities
-  - 🔵 **Information** - Security notes
+   - 🔴 **High** - Critical vulnerabilities
+   - 🟠 **Medium** - Important security issues
+   - 🟡 **Low** - Minor vulnerabilities
+   - 🔵 **Information** - Security notes
 - Confidence levels
 - Discovery timestamps
 
@@ -319,7 +331,7 @@ This forces analysis even if the URL was previously scanned.
 - 🔄 **Burp Intruder Integration**: Auto-configures fuzzing attacks
 - ⚡ **Smart Fuzzing**: AI-generated payloads for maximum coverage
 
-**[Learn More & Upgrade →]([REDACTED_URL])**
+**Contact us for commercial licensing and professional editions:** [REDACTED_EMAIL]
 
 ---
 
@@ -369,7 +381,7 @@ Enable verbose logging:
 
 ## 🤝 Contributing
 
-We welcome contributions! Here's how you can help:
+This project does **not accept outside contributions**. See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
 ### Reporting Bugs
 
@@ -388,54 +400,29 @@ Open an issue with tag `enhancement`:
 - Explain use case
 - Provide examples if possible
 
-### Code Contributions
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-### Development Guidelines
-
-- Follow existing code style
-- Add comments for complex logic
-- Test with multiple AI providers
-- Update documentation
-
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+TRACEGUARD AI™ CE is **source-visible but proprietary software**. By using this software, you agree to the terms in the [LICENSE](LICENSE) file.
 
-```
-MIT License
+### PortSwigger BApp Store
 
-Copyright (c) 2025 TRACEGUARD AI
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
+PortSwigger Ltd. is granted explicit permission to redistribute, host, and bundle this software within Burp Suite and the BApp Store free of charge to users. All other redistribution is prohibited without written permission.
 
 ---
 
-## 🔒 Security & Privacy
+## ⚖️ Responsible Use
+
+**Do not use this software for unauthorized access or activities outside systems you own or have explicit permission to test.**
 
 ### Data Handling
 
 - **Local Processing**: TRACEGUARD runs entirely within Burp Suite
 - **No Data Collection**: We don't collect or transmit usage data
 - **AI Provider Privacy**:
-  - **Ollama**: Completely local, no external communication
-  - **Cloud Providers**: Data sent to respective AI services (OpenAI, Claude, Gemini)
+   - **Ollama**: Completely local, no external communication
+   - **Cloud Providers**: Data sent to respective AI services (OpenAI, Claude, Gemini)
 
 ### Best Practices
 
@@ -477,24 +464,9 @@ Inspired by the security community's dedication to making the web safer.
 
 ---
 
-## 📈 Roadmap
+## ™️ Trademark Notice
 
-### Upcoming Features
-
-- [ ] Enhanced UI/UX improvements
-- [ ] Export findings to PDF/CSV
-- [ ] Integration with CI/CD pipelines
-- [ ] Support for custom AI models
-- [ ] Collaborative team features
-- [ ] Mobile app companion
-
-### Professional Edition Roadmap
-
-- [ ] Advanced WAF fingerprinting
-- [ ] ML-powered false positive reduction
-- [ ] Custom payload templates
-- [ ] Automated exploit generation
-- [ ] Vulnerability chaining detection
+"TRACEGUARD AI™", "TRACEGUARD™", and the TRACEGUARD AI logo are trademarks of SN1PERSECURITY LLC. Unauthorized use is prohibited.
 
 ---
 
@@ -502,10 +474,10 @@ Inspired by the security community's dedication to making the web safer.
 
 ### 🔗 ⛓️ 🔒
 
-**TRACEGUARD AI** - *Intelligent Security Testing for the Modern Web*
+**TRACEGUARD AI™** - *Intelligent Security Testing for the Modern Web*
 
 [Website]([REDACTED_URL]) • [Documentation]([REDACTED_URL]) • [Professional Edition]([REDACTED_URL])
 
-Made with ❤️ by the TRACEGUARD team
+**Copyright © 2026 SN1PERSECURITY LLC. All rights reserved.**
 
 </div>

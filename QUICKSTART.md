@@ -1,6 +1,6 @@
-# Quick Start Guide - TRACEGUARD AI
+# Quick Start Guide - TRACEGUARD AI™
 
-Get up and running with TRACEGUARD AI in under 5 minutes.
+Get up and running with TRACEGUARD AI™ in under 5 minutes.
 
 ---
 

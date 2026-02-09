@@ -1,21 +1,61 @@
-MIT License
+TRACEGUARD AI™ COMMUNITY EDITION LICENSE
 
-Copyright (c) 2025 TRACEGUARD AI
+Copyright (c) 2026 SN1PERSECURITY LLC. All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This license governs the use of TRACEGUARD AI™ Community Edition ("Software"). By downloading, installing, using, or distributing the Software, you agree to the terms of this license.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. GRANT OF LICENSE
+SN1PERSECURITY LLC ("Licensor") grants you a limited, non-exclusive, non-transferable, revocable license to:
+- Use the Software for personal, educational, research, and internal commercial security testing purposes.
+- Run the Software within PortSwigger Burp Suite or compatible tools.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This license does not grant ownership of the Software.
+
+2. RESTRICTIONS
+You may NOT:
+- Sell, sublicense, or commercially exploit the Software or any derivative works.
+- Offer the Software as a paid product, hosted service, or SaaS offering.
+- Modify, fork, or redistribute modified versions of the Software.
+- Create competing products or services based on the Software.
+- Remove or alter copyright, trademark, or license notices.
+
+3. SOURCE CODE AVAILABILITY
+The source code is provided for transparency and security review only. Access to source code does not grant rights to copy, modify, or redistribute except as explicitly permitted in this license.
+
+4. PORTSWIGGER / BURP SUITE DISTRIBUTION EXCEPTION
+Notwithstanding the restrictions above, SN1PERSECURITY LLC grants PortSwigger Ltd. a perpetual, royalty-free right to:
+- Redistribute the Software via the Burp Suite BApp Store.
+- Host and provide downloads of the Software on PortSwigger-controlled platforms.
+- Bundle the Software with Burp Suite or related PortSwigger products.
+
+PortSwigger Ltd. may distribute the Software free of charge to end users, provided that attribution to SN1PERSECURITY LLC is maintained. This permission does not grant PortSwigger Ltd. the right to modify, sublicense, or sell the Software beyond what is expressly stated here.
+
+No other third party is granted redistribution rights without prior written permission from SN1PERSECURITY LLC.
+
+5. OWNERSHIP AND INTELLECTUAL PROPERTY
+The Software is licensed, not sold. SN1PERSECURITY LLC retains all right, title, and interest in and to the Software, including all copyrights, patents, and other intellectual property rights.
+
+6. TRADEMARK NOTICE
+"TRACEGUARD AI™", "TRACEGUARD™", and the TRACEGUARD AI logo are trademarks or trade names of SN1PERSECURITY LLC. This license does not grant permission to use these trademarks, service marks, or logos for marketing, branding, or product naming without prior written permission from SN1PERSECURITY LLC.
+
+7. RESPONSIBLE USE
+You agree not to use the Software for any unlawful activities, including unauthorized access to systems you do not own or have explicit permission to test.
+
+8. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
+
+9. LIMITATION OF LIABILITY
+IN NO EVENT SHALL SN1PERSECURITY LLC OR ITS MEMBERS, OFFICERS, EMPLOYEES, OR AGENTS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+10. GOVERNING LAW
+This license shall be governed by and construed in accordance with the laws of the State of Arizona, United States, without regard to conflict of law principles.
+
+11. TERMINATION
+This license is automatically terminated if you violate any of its terms. Upon termination, you must cease all use of the Software and destroy all copies.
+
+12. COMMERCIAL AND PROFESSIONAL EDITIONS
+This license applies only to TRACEGUARD AI™ Community Edition. SN1PERSECURITY LLC may offer paid or commercial editions under separate license terms. No rights to paid editions are granted under this license.
+
+13. CONTACT
+Commercial licensing, redistribution permissions, and enterprise agreements may be available upon request.
+Contact: [REDACTED_EMAIL]
