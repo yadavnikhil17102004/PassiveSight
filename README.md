@@ -12,7 +12,7 @@
 
 *Intelligent • Silent • Adaptive • Comprehensive*
 
-[🚀 Getting Started](#-quick-start) • [📖 Documentation](#-documentation) • [🔧 Configuration](#-configuration) • [⬆️ Upgrade to Pro](#-upgrade-to-professional)
+[🚀 Getting Started](#-quick-start) • [📖 Documentation](#-documentation) • [🔧 Configuration](#-configuration) • [⬆️ Upgrade to Pro]([REDACTED_URL])
 
 </div>
 
@@ -441,8 +441,7 @@ PortSwigger Ltd. is granted explicit permission to redistribute, host, and bundl
 
 ### Get Help
 
-- 📚 **Documentation**: [traceguard.ai/docs]([REDACTED_URL])
-- 💬 **Discord**: [Join our community]([REDACTED_URL])
+- 📚 **Documentation**: [Documentation](#-documentation)
 - 🐛 **Issues**: [GitHub Issues]([REDACTED_URL])
 - ✉️ **Email**: [REDACTED_EMAIL]
 
@@ -451,11 +450,13 @@ PortSwigger Ltd. is granted explicit permission to redistribute, host, and bundl
 - ⭐ **Star** this repository
 - 👁️ **Watch** for updates
 - 🐦 **Twitter**: [@TraceGuardAI]([REDACTED_URL])
-- 📧 **Newsletter**: [Subscribe]([REDACTED_URL])
 
 ---
 
 ## 🙏 Acknowledgments
+
+Built by:
+- [@xer0dayz]([REDACTED_URL]) at [@Sn1perSecurity]([REDACTED_URL])
 
 Built with:
 - [Burp Suite]([REDACTED_URL]) by PortSwigger
@@ -480,7 +481,7 @@ Inspired by the security community's dedication to making the web safer.
 
 **TRACEGUARD AI™** - *Intelligent Security Testing for the Modern Web*
 
-[Website]([REDACTED_URL]) • [Documentation]([REDACTED_URL]) • [Professional Edition]([REDACTED_URL])
+[Website]([REDACTED_URL]) • [Documentation](#-documentation) • [Professional Edition]([REDACTED_URL])
 
 **Copyright © 2026 SN1PERSECURITY LLC. All rights reserved.**
 
