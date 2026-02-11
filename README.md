@@ -1,3 +1,5 @@
+![TRACEGUARD-AI-Intro.gif](images/TRACEGUARD-AI-Intro.gif)
+
 # TRACEGUARD AI™ - Community Edition
 
 <div align="center">
@@ -17,7 +19,6 @@
 </div>
 
 ---
-![TRACEGUARD-AI-Intro.gif](images/TRACEGUARD-AI-Intro.gif)
 
 ![TRACEGUARDAI-professional-burp-findings1.PNG](images/TRACEGUARDAI-professional-burp-findings1.PNG)
 
