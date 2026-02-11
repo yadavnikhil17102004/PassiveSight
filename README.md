@@ -19,7 +19,6 @@
 </div>
 
 ---
-
 ![TRACEGUARDAI-professional-burp-findings1.PNG](images/TRACEGUARDAI-professional-burp-findings1.PNG)
 
 ![TRACEGUARDAI-burp-findings1.PNG](images/TRACEGUARDAI-burp-findings1.PNG)
