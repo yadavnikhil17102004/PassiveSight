@@ -2,7 +2,20 @@
 .local/
 .claude/
 .idea/
+.vscode/
 releases/
+
+# Secrets and credentials — CRITICAL for AI API key safety
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+credentials.*
+secrets.*
+api_keys.*
 
 # Python
 __pycache__/
@@ -18,10 +31,36 @@ build/
 .venv/
 venv/
 env/
+.mypy_cache/
+.pytest_cache/
+.tox/
+.python-version
+
+# Java/Burp Suite artifacts
+*.class
+*.jar
+*.war
+
+# Database and scan data
+*.sqlite
+*.sqlite3
+*.db
 
 # OS files
 .DS_Store
 Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Editor backup/temp files
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*~
+*.swp
+*.swo
 
 # Logs
 *.log

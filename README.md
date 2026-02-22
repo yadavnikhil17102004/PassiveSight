@@ -16,6 +16,8 @@
 
 [🚀 Getting Started](#-quick-start) • [📖 Documentation](#-documentation) • [🔧 Configuration](#-configuration) • [📊 Benchmarks](BENCHMARK.md) • [⬆️ Upgrade to Pro]([REDACTED_URL])
 
+[![Watch the Professional Demo]([REDACTED_URL])]([REDACTED_URL])
+
 </div>
 
 ---
@@ -337,6 +339,10 @@ This forces analysis even if the URL was previously scanned.
 - 🔄 **Burp Intruder Integration**: Auto-configures fuzzing attacks
 - ⚡ **Smart Fuzzing**: AI-generated payloads for maximum coverage
 
+[![Watch the Professional Demo]([REDACTED_URL])]([REDACTED_URL])
+
+**See it in action** — watch the full [TRACEGUARD Professional demo]([REDACTED_URL]) to see AI-powered active verification, WAF evasion, and automated fuzzing at work.
+
 **Contact us for commercial licensing and professional editions:** [REDACTED_EMAIL]
 
 ---
@@ -483,7 +489,7 @@ Inspired by the security community's dedication to making the web safer.
 
 **TRACEGUARD AI™** - *Intelligent Security Testing for the Modern Web*
 
-[Website]([REDACTED_URL]) • [Documentation](#-documentation) • [Professional Edition]([REDACTED_URL])
+[Website]([REDACTED_URL]) • [Documentation](#-documentation) • [Professional Edition]([REDACTED_URL]) • [Professional Demo]([REDACTED_URL])
 
 **Copyright © 2026 SN1PERSECURITY LLC. All rights reserved.**
 
