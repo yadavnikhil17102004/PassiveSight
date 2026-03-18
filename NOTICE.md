@@ -1,5 +1,7 @@
 # Legal Notice for TRACEGUARD AI™ Community Edition
 
+Last reviewed: 2026-03-18
+
 Copyright (c) 2026 SN1PERSECURITY LLC. All rights reserved.
 
 ## Trademarks
