@@ -1,5 +1,3 @@
-![TRACEGUARD-AI-Intro.gif](images/TRACEGUARD-AI-Intro.gif)
-
 # TRACEGUARD AI™ - Community Edition
 
 <div align="center">
