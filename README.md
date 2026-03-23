@@ -14,9 +14,7 @@
 
 *Intelligent • Silent • Adaptive • Comprehensive*
 
-[🚀 Getting Started](#-quick-start) • [📖 Documentation](#-documentation) • [🔧 Configuration](#-configuration) • [📊 Benchmarks](BENCHMARK.md) • [⬆️ Upgrade to Pro]([REDACTED_URL])
-
-[![Watch the Professional Demo]([REDACTED_URL])]([REDACTED_URL])
+[🚀 Getting Started](#-quick-start) • [📖 Documentation](#-documentation) • [🔧 Configuration](#-configuration) • [📊 Benchmarks](BENCHMARK.md)
 
 </div>
 
@@ -26,7 +24,7 @@
 ![TRACEGUARDAI-burp-findings1.PNG](images/TRACEGUARDAI-burp-findings1.PNG)
 ---
 
-> **Note:** This is the Community Edition. Commercial and Professional Editions with advanced features are available separately.
+> **Note:** This is the Community Edition of TRACEGUARD AI.
 
 ## 🌟 Overview
 
@@ -350,21 +348,6 @@ This forces analysis even if the URL was previously scanned.
 | **Automatic Fuzzing** | ❌ | ✅ |
 | **Priority Support** | ❌ | ✅ |
 
-### ⬆️ Upgrade to Professional
-
-**TRACEGUARD Professional** adds active verification capabilities:
-
-- 🎯 **Phase 2 Verification**: Automatically validates findings with exploit payloads
-- 🛡️ **WAF Detection**: Identifies and adapts to web application firewalls
-- 📚 **Curated Payload Libraries**: Battle-tested OWASP payloads
-- 🌐 **OOB Testing**: Detects blind vulnerabilities (SSRF, XXE, etc.)
-- 🔄 **Burp Intruder Integration**: Auto-configures fuzzing attacks
-- ⚡ **Smart Fuzzing**: AI-generated payloads for maximum coverage
-
-[![Watch the Professional Demo]([REDACTED_URL])]([REDACTED_URL])
-
-**See it in action** — watch the full [TRACEGUARD Professional demo]([REDACTED_URL]) to see AI-powered active verification, WAF evasion, and automated fuzzing at work.
-
 **Contact us for commercial licensing and professional editions:** [REDACTED_EMAIL]
 
 ---
@@ -511,7 +494,7 @@ Inspired by the security community's dedication to making the web safer.
 
 **TRACEGUARD AI™** - *Intelligent Security Testing for the Modern Web*
 
-[Website]([REDACTED_URL]) • [Documentation](#-documentation) • [Professional Edition]([REDACTED_URL]) • [Professional Demo]([REDACTED_URL])
+[Documentation](#-documentation) • [Issues]([REDACTED_URL]) • [Discord Community]([REDACTED_URL])
 
 **Copyright © 2026 SN1PERSECURITY LLC. All rights reserved.**
 

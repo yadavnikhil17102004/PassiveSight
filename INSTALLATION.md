@@ -496,11 +496,6 @@ ollama serve
 ### Community Support
 - [GitHub Issues]([REDACTED_URL])
 - [Discord Community]([REDACTED_URL])
-- Email: [REDACTED_EMAIL]
-
-### Professional Support
-Upgrade to TRACEGUARD Professional for priority support:
-- [traceguard.ai/pro]([REDACTED_URL])
 
 ---
 
