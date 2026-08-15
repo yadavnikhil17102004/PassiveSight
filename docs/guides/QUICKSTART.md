@@ -1,56 +1,72 @@
-# Quick Start - TRACEGUARD AI
+# Quickstart - TraceGuard
 
-Get the extension running quickly with a stable baseline configuration.
+This guide is the shortest reliable path to your first finding.
 
-## Prerequisites
+## Before You Start
 
-- Burp Suite
-- One AI provider (Ollama recommended for local/private usage)
+TraceGuard only works inside Burp Suite.
 
-## 1. Clone and Open
+You must have:
 
-git clone <your-fork-url>
-cd <your-fork-folder>
+- Burp Suite installed
+- Burp Python extension support (Jython runtime)
+- One reachable AI provider configuration
 
-## 2. Load Extension in Burp
+## Step 1: Load Extension
 
 1. Open Burp.
-2. Go to Extender -> Extensions -> Add.
-3. Choose Python extension type.
+2. Navigate to `Extender -> Extensions -> Add`.
+3. Set extension type to `Python`.
 4. Load `traceguard_ai_community.py`.
+5. Confirm the `TRACEGUARD` tab appears.
 
-## 3. Configure Provider
+If the tab does not appear, check `Extender -> Errors` first.
 
-In TRACEGUARD Settings:
+## Step 2: Configure Provider
 
-- Provider: choose one of Ollama/OpenAI/Claude/Gemini/Azure Foundry
-- API URL: provider endpoint
-- API key: if required
-- Model: provider model/deployment name
+In `TRACEGUARD -> Settings`, set:
 
-Run Test Connection, then Save.
+- Provider (`Ollama`, `OpenAI`, `Claude`, `Gemini`, or `Azure Foundry`)
+- API URL
+- API key (if required)
+- Model/deployment name
 
-## 4. Define Scope and Browse
+Then click `Test Connection` and verify success before saving.
 
-1. Set target scope in Burp (Target -> Scope).
-2. Route browser traffic through Burp proxy.
-3. Browse target endpoints.
-4. Watch TRACEGUARD findings and Burp Issue Activity.
+## Step 3: Set Burp Scope
 
-## 5. Verify Azure Environment (If Using Azure)
+1. Add your test target in `Target -> Scope`.
+2. Confirm in-scope URLs are visible in Burp.
+3. Ensure your browser/client is actually using Burp proxy.
 
+No in-scope traffic means no analysis.
+
+## Step 4: Generate Traffic
+
+1. Browse or replay requests to the in-scope target.
+2. Watch the TraceGuard findings table populate.
+3. Verify entries are also visible in Burp Issue Activity.
+
+## Step 5: Sanity Validation
+
+Use this checklist if no findings appear:
+
+- Extension loaded without errors
+- Provider test passed
+- Scope contains target hosts/paths
+- Requests are flowing through Burp proxy
+- Requests are not only static assets
+
+## Azure-Specific Validation
+
+```bash
 ./tools/test_azure_env.sh ./.env
+```
 
-Expected: STATUS: VALID
+Expected output includes `STATUS: VALID`.
 
-## Troubleshooting Fast Path
+## Next
 
-- No findings: verify scope and proxy flow
-- Connection failure: verify URL/key/model
-- Extension load issues: check Extender -> Errors
-
-## Next Reading
-
-- Internal architecture: `docs/INTERNAL_WORKING.md`
-- Maintainer workflow: `docs/DEVELOPER_WORKFLOW.md`
-- Full installation matrix: `docs/guides/INSTALLATION.md`
+- Full provider setup matrix: `docs/guides/INSTALLATION.md`
+- Runtime architecture and code map: `docs/ARCHITECTURE.md`
+- Internal behavior details: `docs/INTERNAL_WORKING.md`

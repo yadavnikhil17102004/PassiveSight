@@ -1,77 +1,76 @@
-# TRACEGUARD AI - Community Edition (Fork)
+# TRACEGUARD AI - Community Edition
 
-AI-powered passive vulnerability analysis extension for Burp Suite.
+AI-assisted passive vulnerability analysis extension for Burp Suite.
 
-## What This Project Is
+## Important Reality Check
 
-TRACEGUARD AI runs inside Burp Suite and uses an AI provider to analyze proxied HTTP traffic for likely security issues. It is passive-first and designed to improve analyst throughput by surfacing high-signal findings with severity, confidence, and remediation context.
+TraceGuard is not a standalone scanner.
 
-## Which File Should You Load?
+- It only runs as a Python extension inside Burp Suite.
+- It requires a configured AI provider before analysis works.
+- It analyzes in-scope traffic that actually passes through Burp proxy.
+- It is passive-first: it prioritizes analyst guidance, not autonomous exploitation.
 
-- Stable path: `traceguard_ai_community.py` (recommended for daily use)
-- Experimental path: `variants/traceguard_v2_1_0_with_scope.py` (includes custom scope manager and expanded UI)
+If Burp is not installed, provider settings are missing, or traffic is not in scope, TraceGuard will not produce findings.
 
-If reliability matters most, use the stable file.
+## What It Does
 
-## Key Capabilities
+- Passively analyzes proxied HTTP request/response pairs.
+- Supports multiple providers (Ollama, OpenAI, Claude, Gemini, Azure Foundry).
+- Publishes findings to both TraceGuard UI and Burp Issue Activity.
+- Uses request-signature caching to reduce repeat AI calls.
+- Exports findings to CSV.
 
-- Passive HTTP analysis integrated with Burp workflow
-- Multi-provider support: Ollama, OpenAI, Claude, Gemini, Azure Foundry
-- Burp Issue Activity integration through custom scan issues
-- Persistent request-signature cache to reduce repeated AI calls
-- CSV export of findings
+## Primary Runtime File
+
+- Stable: `traceguard_ai_community.py` (recommended)
+- Experimental: `variants/traceguard_v2_1_0_with_scope.py`
+
+## Quick Install
+
+1. Open Burp Suite.
+2. Go to Extender -> Extensions -> Add.
+3. Select extension type `Python`.
+4. Load `traceguard_ai_community.py`.
+5. Open the `TRACEGUARD` tab and configure provider settings.
+6. Run `Test Connection`.
+7. Put target in Burp scope and proxy traffic through Burp.
+
+## Validation Checklist
+
+- Provider URL/API key/model are valid.
+- `Test Connection` returns success.
+- Target is in Burp scope.
+- Browser traffic is routed through Burp proxy.
+- Findings appear in TraceGuard and Issue Activity.
+
+For Azure environment validation:
+
+```bash
+./tools/test_azure_env.sh ./.env
+```
+
+Expected output includes `STATUS: VALID`.
+
+## Documentation
+
+- Docs hub: `docs/README.md`
+- Quickstart: `docs/guides/QUICKSTART.md`
+- Installation matrix: `docs/guides/INSTALLATION.md`
+- Architecture map: `docs/ARCHITECTURE.md`
+- Internal flow details: `docs/INTERNAL_WORKING.md`
+- Developer workflow: `docs/DEVELOPER_WORKFLOW.md`
+- Improvement roadmap: `docs/project/IMPROVEMENT_GUIDE.md`
+- Changelog: `CHANGELOG.md`
+- Legal notice/license: `docs/project/NOTICE.md`, `LICENSE`
 
 ## Repository Layout
 
-- `traceguard_ai_community.py`: stable baseline and primary integration target
-- `variants/traceguard_v2_0_0.py`: older v2 variant
-- `variants/traceguard_v2_1_0_with_scope.py`: v2.1 scope-manager variant
-- `variants/traceguard_v2_enhanced.py`: alternative enhanced variant
-- `docs/guides/QUICKSTART.md`: first run in minutes
-- `docs/guides/INSTALLATION.md`: complete provider setup
-- `docs/INTERNAL_WORKING.md`: internal architecture and processing pipeline
-- `docs/DEVELOPER_WORKFLOW.md`: maintainer verification workflow
-- `.github/copilot-instructions.md`: workspace coding/agent rules
-
-## Requirements
-
-- Burp Suite (Community or Professional)
-- Java runtime required by Burp
-- Burp Python extension support (Jython runtime)
-- One configured AI provider
-
-## Install
-
-1. Open Burp Suite.
-2. Navigate to Extender -> Extensions -> Add.
-3. Select extension type Python.
-4. Load `traceguard_ai_community.py`.
-5. Open TRACEGUARD tab and configure provider settings.
-
-## First Validation
-
-1. Set provider URL, API key (if required), and model in Settings.
-2. Click Test Connection.
-3. Put a target in Burp scope.
-4. Proxy traffic and verify findings appear in TRACEGUARD and Issue Activity.
-
-For Azure-related setup checks, run:
-
-./tools/test_azure_env.sh ./.env
-
-## Documentation Index
-
-- Setup: `docs/guides/QUICKSTART.md`, `docs/guides/INSTALLATION.md`
-- Internal behavior: `docs/INTERNAL_WORKING.md`
-- Maintenance flow: `docs/DEVELOPER_WORKFLOW.md`
-- Change history: `CHANGELOG.md`
-- Optimization context: `docs/project/OPTIMIZATION_PLAN.md`
-- Legal/license: `docs/project/NOTICE.md`, `LICENSE`
+- `traceguard_ai_community.py`: stable runtime integration target
+- `variants/`: experimental implementations
+- `tools/`: helper scripts
+- `docs/`: user and maintainer documentation
 
 ## Responsible Use
 
 Use only on systems you own or are explicitly authorized to test.
-
-## Fork Notes
-
-This repository is a maintained fork with sanitized ownership/contact references. Track support and issues through this fork's issue tracker.
